@@ -1,74 +1,107 @@
-# AI Legal Document Summarizer (Flask)
+# AI Legal Summarizer
 
-## Author / About
-**Name:** Hafsa Noor
-**University:** University of Layyah
-**Department:** Information Technology
-**Roll No.:** ULBSITMA 23_53
-**Teacher:** Mr. Faisal Hafeez
+A beginner-friendly Flask web app that uploads PDF legal documents, extracts text, and generates concise summaries for easy review.
 
-**Demo video (Google Drive):** https://drive.google.com/file/d/1PCimzTi1vsLxdGuLP5W2tbRowkyx7F4Y/view?usp=drive_link
+## 🌟 Features
+- Upload PDF legal documents for summarization
+- Extract text from PDFs using `PyPDF2`
+- Summarize using Hugging Face Transformer models
+- Display both original text and generated summary in the browser
+- Test summarization on local `.txt` dataset files
 
+## 🛠 Technologies Used
+- Python
+- Flask
+- PyPDF2
+- Hugging Face Transformers
+- HTML, CSS, JavaScript
 
-**Updated PPT:** Hafsa noor.ppt
+## 📂 Project Structure
+```
+AI-Legal-Summarizer/
+├── app.py
+├── requirements.txt
+├── README.md
+├── dataset/
+│   ├── README.md
+│   ├── sample_1.txt
+│   └── sample_2.txt
+├── docs/
+│   ├── AI Legal Summarizer Ppt.pptx
+│   └── AI Legal Summarizer Report.pdf
+├── templates/
+│   ├── dataset_test.html
+│   ├── index.html
+│   └── result.html
+├── static/
+│   ├── styles.css
+│   └── images/
+├── uploads/
+└── test_doc.txt
+```
 
-**Legal Document Summarizer Report:** Legal_Document_Summarizer_Final_Report
-
-Beginner-friendly web app that:
-
-
-1. Uploads a PDF legal document
-2. Extracts text using **PyPDF2**
-3. Summarizes using **HuggingFace Transformers**
-4. Shows the original text and the summary
-
-## Project structure
-- `app.py` - Flask app (PDF summarization + dataset testing)
-- `requirements.txt` - Python dependencies
-- `templates/` - HTML templates
-- `static/` - CSS files
-- `uploads/` - temporary uploaded PDFs (auto-deleted after summarization)
-- `dataset/` - beginner dataset folder with sample `.txt` legal documents
-
-
-## How to run
-1) Create a virtual environment (recommended)
-
+## 🚀 Installation
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/AI-Legal-Summarizer.git
+```
+2. Open the project folder
+```bash
+cd AI-Legal-Summarizer
+```
+3. Create a virtual environment
 ```bash
 python -m venv venv
 ```
-
-2) Activate it
-
-- Windows (cmd):
-
+4. Activate the environment
 ```bash
 venv\Scripts\activate
 ```
-
-3) Install dependencies
-
+5. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-4) Start Flask
-
+6. Start the app
 ```bash
 python app.py
 ```
+7. Open the app in your browser
+```text
+http://127.0.0.1:5000
+```
 
-5) Open the browser at:
-- http://127.0.0.1:5000
+## 📸 Screenshots
+*(Add screenshots here for the upload page, summary result page, and dataset test page.)*
 
-## Notes
-- The first run downloads the model `facebook/bart-large-cnn`.
-- Large PDFs may take time; we truncate text for summarization to avoid token limits.
+## 🌐 Live Demo
+No live demo available yet.
 
-## Dataset testing (beginner feature)
-- Add your legal text as `.txt` files in `dataset/`
-- Start the app, then open:
-  - http://127.0.0.1:5000/dataset_test
-- The app will summarize each dataset file and show the results in your browser.
+## 🔧 Configuration
+- The app downloads the `facebook/bart-large-cnn` model on first run.
+- Large PDFs may take longer to process.
+- Uploaded files are stored in `uploads/` temporarily and removed after summarization.
+
+## 📄 Downloadable Documents
+The `docs/` folder contains:
+- `AI Legal Summarizer Ppt.pptx`
+- `AI Legal Summarizer Report.pdf`
+
+You can download these files directly from the repository.
+
+## 🤝 Contributing
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Submit a pull request
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## 👩‍💻 Author
+Hafsa Noor
+- University of Layyah
+- Department of Information Technology
+- Email: noorhafsa164@gmail.com
+- GitHub: [https://github.com/your-username](https://github.com/your-username)
 
 
