@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual environments
+venv/
+venv2/
+
+# Uploads & outputs
+uploads/
+static/*.mp3
+
+# Environment files (contain secrets)
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+

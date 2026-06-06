@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dataset Test - AI Legal Document Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dataset Test</h1>
+
+    <a class="btn secondary" href="{{ url_for('index') }}">Upload PDF</a>
+
+    <div class="flash">
+
+      <strong>Dataset source:</strong>
+      <div style="margin-top:8px; color:var(--muted);">
+        Files inside <code>dataset/</code> (only <strong>.txt</strong> files are loaded)
+      </div>
+    </div>
+
+    {% for item in results %}
+      <div class="card" style="margin-top:16px;">
+        <h2 style="margin-bottom:6px;">{{ item.filename }}</h2>
+        <h3 style="margin:0 0 10px 0; color:var(--accent);">Summary</h3>
+        <pre class="text">{{ item.summary }}</pre>
+      </div>
+    {% endfor %}
+
+    <div class="footer">Tip: Add more `.txt` files into `dataset/` and refresh this page.</div>
+  </div>
+</body>
+</html>
+

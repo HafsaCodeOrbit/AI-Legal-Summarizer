@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summary Result - AI Legal Document Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <div class="summary-head">
+      <div class="summary-title">
+        <span class="summary-icon">§</span>
+        <div>
+          <h1 style="margin:0;">Summary Output</h1>
+          <p class="subtitle" style="margin:6px 0 0;">Review the extracted text and the generated legal summary.</p>
+        </div>
+      </div>
+      <a class="btn secondary" href="{{ url_for('index') }}">Back to Upload</a>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Original Extract</h2>
+        <pre class="text">{{ original_text }}</pre>
+      </div>
+
+      <div class="card">
+        <h2>Summarized Text</h2>
+        <pre class="text">{{ summarized_text }}</pre>
+      </div>
+    </div>
+
+    <div class="footer">Built with Flask, PyPDF2, and HuggingFace Transformers.</div>
+  </div>
+</body>
+</html>
+
+

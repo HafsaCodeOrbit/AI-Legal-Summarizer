@@ -1,0 +1,11 @@
+[Sample Legal Document 1]
+
+This Agreement is made effective as of January 1, 2026 ("Effective Date") by and between Acme Corp ("Company") and John Doe ("Consultant").
+
+1. Services. Consultant shall provide consulting services related to software development and project management.
+2. Term. The term of this Agreement will commence on the Effective Date and continue for twelve (12) months unless terminated earlier.
+3. Fees. Company shall pay Consultant a monthly fee of $5,000. All payments are due within thirty (30) days of invoice.
+4. Confidentiality. Each party agrees to keep confidential all non-public information received from the other party.
+5. Termination. Either party may terminate this Agreement for material breach with thirty (30) days written notice.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
