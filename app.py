@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory, abort
 from groq import Groq
 from gtts import gTTS
 from pypdf import PdfReader
@@ -6,6 +6,16 @@ import os
 import uuid
 
 app = Flask(__name__)
+
+@app.route('/download/<path:filename>')
+def download_file(filename):
+    allowed_files = {
+        'AI Legal Summarizer Report.pdf',
+        'AI Legal Summarizer Ppt.pptx'
+    }
+    if filename not in allowed_files:
+        abort(404)
+    return send_from_directory('docs', filename, as_attachment=True)
 
 # API KEY (store your key in .env)
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))

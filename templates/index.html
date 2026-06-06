@@ -364,19 +364,20 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="content-area">
-            <div id="welcomeScreen" class="welcome-screen">
-                <i class="fa-solid fa-scale-balanced" style="font-size: 4rem; color: var(--glass-border);"></i>
-                <h2>Intelligent Legal Insights</h2>
-                <p>Upload your legal documents to get instant, accurate summaries in both English and Urdu with professional voice synthesis.</p>
-            </div>
-
-            <div id="loader" class="loader">
-                <div class="spinner"></div>
-                <p>Analyzing document & generating summaries...</p>
-                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">This may take a few moments</p>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h4 style="font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">Download Resources</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <a class="btn btn-primary" href="{{ url_for('download_file', filename='AI Legal Summarizer Report.pdf') }}" download>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            Download Report PDF
+                        </a>
+                        <a class="btn btn-primary" href="{{ url_for('download_file', filename='AI Legal Summarizer Ppt.pptx') }}" download>
+                            <i class="fa-solid fa-file-powerpoint"></i>
+                            Download PPT
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div id="resultContainer" class="summary-grid hidden">
