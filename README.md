@@ -82,11 +82,11 @@ No live demo available yet.
 - Uploaded files are stored in `uploads/` temporarily and removed after summarization.
 
 ## 📄 Downloadable Documents
-The `docs/` folder contains:
-- `AI Legal Summarizer Ppt.pptx`
-- `AI Legal Summarizer Report.pdf`
+Click a file name below to open or download it from the `docs/` folder:
+- [AI Legal Summarizer Ppt.pptx](docs/AI%20Legal%20Summarizer%20Ppt.pptx)
+- [AI Legal Summarizer Report.pdf](docs/AI%20Legal%20Summarizer%20Report.pdf)
 
-You can download these files directly from the repository.
+If you run the app locally, these documents are also available via the web app download links in the sidebar.
 
 ## 🤝 Contributing
 1. Fork the repository
